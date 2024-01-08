@@ -22,16 +22,36 @@ Evaluador de Debilidades es un programa que realiza un análisis y cálculo de n
 2. Ejecuta el programa.
 3. Observa el resumen de notas generado.
 
-## Ejemplo de Archivo de Entrada
+## Ejemplo de archivo de entrada
+Cada valor de la tabla debe estar separado por un espacio ' ' respectivamente. Y la primer columna representa los identificadores de cada estudiante.
 
 ```plaintext
-CristoJ. 0 0 0 0 1 1 1 1 1 1 0 0 1/2 0 2/3 1/2 4/5 3/6
-Jesus. 0 1/2 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 4/6
-Dios-15 1 1/2 0 0 0 1 1 1 1 0 1 1 0 0 1/3 1/2 0 0
-Zafiro4 1 1 1 1 1 1 1 1 0 0 1 1 1 0 1 1 1 4/6
-Juan533 1 1/2 0 1 0 1/3 1 1 0 1 0 0 0 0 0 0 2/5 4/6
-SrJesus 1 1/2 1 1 1 1/3 1 1 0 0 1 1 1 1 0 1/2 3/5 2/6
-Josue1:9 1 1/2 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 4/6
-Sami 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2/5 4/6
-Sofia0611 1 0 1 0 1 1/2 1 1/2 1 1 1 1 0 1 1/3 1 3/5 1/6
-3013 0 0 0 0 0 2/3 1 0 1 1 0 1 0 1 1/3 1/2 3/5 0
+CristoJ. 0 0 0 0 1
+Jesus. 0 1/2 1 8/16 1
+Dios-15 1 1/2 0 0 0
+Zafiro4 1 1/34 1 2/7 1
+Juan533 1 1/2 4/7 1 0
+SrJesus 1 1/2 1 1 1
+Josue1:9 1 1/5 1 1 1
+Sami 1 0 1 1 1 1
+Sofia0611 1 0 1 0 1
+3013 1 1/2 0 1/2 0
+```
+
+
+## Ejemplo de salida
+La ultima fila representa los valores asignados a cada pregunta.
+```plaintext
+Estudiante  1     2     3     4     5     Total     
+CristoJ.    -     -     -     -     2.9   2.94      
+Jesus.      -     3.6   3.4   2.3   2.9   12.17     
+Dios-15     2.0   3.6   -     -     -     5.52      
+Zafiro4     2.0   0.2   3.4   1.3   2.9   9.79      
+Juan533     2.0   3.6   1.9   4.6   -     12.06     
+SrJesus     2.0   3.6   3.4   4.6   2.9   16.44     
+Josue1:9    2.0   1.4   3.4   4.6   2.9   14.30     
+Sami        2.0   -     3.4   4.6   2.9   12.88     
+Sofia0611   2.0   -     3.4   -     2.9   8.26      
+3013        2.0   3.6   -     2.3   -     7.83      
+Valores     2.0   7.1   3.4   4.6   2.9   20  
+```

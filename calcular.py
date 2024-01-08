@@ -1,4 +1,6 @@
-width_identificador = 12
+width_identificador = 12 # este valor reprensenta el ancho de la columna 
+                         # asignada a los identificadores, se puede incrementar
+                         # para usar identificadores mas largos.
 
 def main():
     with open('notas.txt') as file:
