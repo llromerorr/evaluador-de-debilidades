@@ -25,6 +25,8 @@ Evaluador de Debilidades es un programa que realiza un análisis y cálculo de n
 ## Ejemplo de archivo de entrada
 Cada valor de la tabla debe estar separado por un espacio ' ' respectivamente. Y la primer columna representa los identificadores de cada estudiante.
 
+Un valor del tipo 3/7 reprensenta que dicha pregunta estaba compuesta por 7 subpreguntas, y que el alumno respondio 3 de las 7 subpreguntas correctamente.
+
 ```plaintext
 CristoJ. 0 0 0 0 1
 Jesus. 0 1/2 1 8/16 1
